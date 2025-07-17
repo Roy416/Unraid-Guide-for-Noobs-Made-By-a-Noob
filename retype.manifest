@@ -1,6 +1,6 @@
 {
   "version": "3.11.0",
-  "created": "2025-07-17T22:39:51Z",
+  "created": "2025-07-17T22:54:56Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -13,6 +13,18 @@
     },
     {
       "path": "index.html"
+    },
+    {
+      "path": "installingunraid\\booting_into_unraid\\index.html"
+    },
+    {
+      "path": "installingunraid\\first_time_setup\\index.html"
+    },
+    {
+      "path": "installingunraid\\further_tinkering\\index.html"
+    },
+    {
+      "path": "installingunraid\\unraid_usb_creator\\index.html"
     },
     {
       "path": "resources\\css\\retype.css"

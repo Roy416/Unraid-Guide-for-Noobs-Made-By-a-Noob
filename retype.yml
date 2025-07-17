@@ -17,3 +17,11 @@ links:
 
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+
+navigation:
+  - Home: readme.md
+  - InstallingUnraid:
+    - Booting_into_Unraid: InstallingUnraid/Booting_into_Unraid.md
+    - First_Time_Setup: InstallingUnraid/First_Time_Setup.md
+    - Further_Tinkering: InstallingUnraid/Further_Tinkering.md
+    - Unraid_USB_Creator: InstallingUnraid/Unraid_USB_Creator.md
