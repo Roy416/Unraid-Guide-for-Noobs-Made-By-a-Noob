@@ -6,16 +6,14 @@ start:
   # pro: true
 
 branding:
-  title: Unraid Guide For Noobs
+  title: Unraid Guide for Noobs Made by a Noob
   label: 
 
 links:
 
 footer:
-  copyright: "Made with love by MrTing"
+  copyright: "Made with love by your local ting"
 
-url: unraidguide.github.io/unraide-guide/
+url: unraidguide.github.io/unraid-guide/
 
-pages:
-  - path: "README.md"
-    hide: true
+favicon: favicon2.png

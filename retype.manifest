@@ -1,6 +1,6 @@
 {
-  "version": "3.11.0",
-  "created": "2025-11-16T15:36:24Z",
+  "version": "4.6.0",
+  "created": "2026-10-10T13:59:52Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,19 +9,563 @@
       "path": "404.html"
     },
     {
-      "path": "choosing\\ichose\\index.html"
+      "path": "app-installations\\backup\\appdata-backup.md"
     },
     {
-      "path": "choosing\\yabba\\index.html"
+      "path": "app-installations\\backup\\appdata-backup\\index.html"
     },
     {
-      "path": "CNAME"
+      "path": "app-installations\\backup\\backup-online\\about-backup.md"
+    },
+    {
+      "path": "app-installations\\backup\\backup-online\\about-backup\\index.html"
+    },
+    {
+      "path": "app-installations\\backup\\backup-online\\backup-to-online-storage.md"
+    },
+    {
+      "path": "app-installations\\backup\\backup-online\\backup-to-online-storage\\index.html"
+    },
+    {
+      "path": "app-installations\\backup\\backup-online\\restore-backup.md"
+    },
+    {
+      "path": "app-installations\\backup\\backup-online\\restore-backup\\index.html"
+    },
+    {
+      "path": "app-installations\\backup\\backup-to-online-storage\\index.html",
+      "old": true
+    },
+    {
+      "path": "app-installations\\file-sharing\\authelia-nextcloud.md"
+    },
+    {
+      "path": "app-installations\\file-sharing\\authelia-nextcloud\\index.html"
+    },
+    {
+      "path": "app-installations\\file-sharing\\external-storage.md"
+    },
+    {
+      "path": "app-installations\\file-sharing\\external-storage\\index.html"
+    },
+    {
+      "path": "app-installations\\file-sharing\\installation.md"
+    },
+    {
+      "path": "app-installations\\file-sharing\\installation\\index.html"
+    },
+    {
+      "path": "app-installations\\file-sharing\\newmd1\\index.html",
+      "old": true
+    },
+    {
+      "path": "app-installations\\file-sharing\\nextcloud.md"
+    },
+    {
+      "path": "app-installations\\file-sharing\\nextcloud\\index.html"
+    },
+    {
+      "path": "app-installations\\file-sharing\\post-installation-setup.md"
+    },
+    {
+      "path": "app-installations\\file-sharing\\post-installation-setup\\index.html"
+    },
+    {
+      "path": "app-installations\\file-sharing\\using-tailscale-instead.md"
+    },
+    {
+      "path": "app-installations\\file-sharing\\using-tailscale-instead\\index.html"
+    },
+    {
+      "path": "app-installations\\media-server\\installation\\index.html",
+      "old": true
+    },
+    {
+      "path": "app-installations\\media-server\\jellyfin\\install.md"
+    },
+    {
+      "path": "app-installations\\media-server\\jellyfin\\install\\index.html"
+    },
+    {
+      "path": "app-installations\\media-server\\jellyfin\\jellyfin1.md"
+    },
+    {
+      "path": "app-installations\\media-server\\jellyfin\\jellyfin1\\index.html"
+    },
+    {
+      "path": "app-installations\\media-server\\newmd\\index.html",
+      "old": true
+    },
+    {
+      "path": "app-installations\\media-server\\plex\\index.html",
+      "old": true
+    },
+    {
+      "path": "app-installations\\media-server\\plex\\installation.md"
+    },
+    {
+      "path": "app-installations\\media-server\\plex\\installation\\index.html"
+    },
+    {
+      "path": "app-installations\\media-server\\plex\\plex-tips.md"
+    },
+    {
+      "path": "app-installations\\media-server\\plex\\plex-tips\\index.html"
+    },
+    {
+      "path": "app-installations\\media-server\\plexvsjellyfin.md"
+    },
+    {
+      "path": "app-installations\\media-server\\plexvsjellyfin\\index.html"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\0-immich.md"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\0-immich\\index.html"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\10-post-installation-setup.md"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\10-post-installation-setup\\index.html"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\15-external-path.md"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\15-external-path\\index.html"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\5-installation.md"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\5-installation\\index.html"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\immich-public-proxy.md"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\immich-public-proxy\\index.html"
+    },
+    {
+      "path": "app-installations\\randompage.md"
+    },
+    {
+      "path": "app-installations\\randompage\\index.html"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(2).md"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(2)\\index.html"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(3).md"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(3)\\index.html"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(4).md"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(4)\\index.html"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(5).md"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(5)\\index.html"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(6).md"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy-(6)\\index.html"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy.md"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy-copy\\index.html"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy.md"
+    },
+    {
+      "path": "app-installations\\trash\\newmd1-copy\\index.html"
+    },
+    {
+      "path": "appsplugins\\app-tips.md"
+    },
+    {
+      "path": "appsplugins\\app-tips\\index.html"
+    },
+    {
+      "path": "appsplugins\\custom-docker-network.md"
+    },
+    {
+      "path": "appsplugins\\custom-docker-network\\index.html"
+    },
+    {
+      "path": "appsplugins\\plugins.md"
+    },
+    {
+      "path": "appsplugins\\plugins\\index.html"
+    },
+    {
+      "path": "appsplugins\\understanding-docker.md"
+    },
+    {
+      "path": "appsplugins\\understanding-docker\\index.html"
+    },
+    {
+      "path": "assets\\asus-ap201.jpg"
+    },
+    {
+      "path": "assets\\bolt2.png"
+    },
+    {
+      "path": "assets\\box.png"
+    },
+    {
+      "path": "assets\\brain.png"
+    },
+    {
+      "path": "assets\\bulb.png"
+    },
+    {
+      "path": "assets\\cabinet.png"
+    },
+    {
+      "path": "assets\\cloud.png"
+    },
+    {
+      "path": "assets\\configuration.yml"
+    },
+    {
+      "path": "assets\\desktop-computer.png"
+    },
+    {
+      "path": "assets\\detective.png"
+    },
+    {
+      "path": "assets\\down.png"
+    },
+    {
+      "path": "assets\\face-with-monocle.png"
+    },
+    {
+      "path": "assets\\film.png"
+    },
+    {
+      "path": "assets\\floppy-disk.png"
+    },
+    {
+      "path": "assets\\forward.png"
+    },
+    {
+      "path": "assets\\fractal-r5.jpg"
+    },
+    {
+      "path": "assets\\fractal-r7.jpg"
+    },
+    {
+      "path": "assets\\gear.png"
+    },
+    {
+      "path": "assets\\give.png"
+    },
+    {
+      "path": "assets\\hammer-and-wrench.png"
+    },
+    {
+      "path": "assets\\immich.png"
+    },
+    {
+      "path": "assets\\info.png"
+    },
+    {
+      "path": "assets\\information.png"
+    },
+    {
+      "path": "assets\\installation.png"
+    },
+    {
+      "path": "assets\\jellyfish.png"
+    },
+    {
+      "path": "assets\\jonsbo-n3.jpg"
+    },
+    {
+      "path": "assets\\lock.png"
+    },
+    {
+      "path": "assets\\map.png"
+    },
+    {
+      "path": "assets\\master-n400.jpg"
+    },
+    {
+      "path": "assets\\node-304.jpg"
+    },
+    {
+      "path": "assets\\node-804.jpg"
+    },
+    {
+      "path": "assets\\numbers.png"
+    },
+    {
+      "path": "assets\\open-book.png"
+    },
+    {
+      "path": "assets\\orange-circle.png"
+    },
+    {
+      "path": "assets\\pencil.png"
+    },
+    {
+      "path": "assets\\play.png"
+    },
+    {
+      "path": "assets\\plex.png"
+    },
+    {
+      "path": "assets\\plug.png"
+    },
+    {
+      "path": "assets\\postbox.png"
+    },
+    {
+      "path": "assets\\question-mark.png"
+    },
+    {
+      "path": "assets\\reverse.png"
+    },
+    {
+      "path": "assets\\shrug2.png"
+    },
+    {
+      "path": "assets\\subnet.png"
+    },
+    {
+      "path": "assets\\tailscale-acl.png"
+    },
+    {
+      "path": "assets\\tailscale-acl2.png"
+    },
+    {
+      "path": "assets\\tailscale-acl3.png"
+    },
+    {
+      "path": "assets\\thinking-face.png"
+    },
+    {
+      "path": "assets\\tunnel.png"
+    },
+    {
+      "path": "assets\\users_database.yml"
+    },
+    {
+      "path": "assets\\web.png"
+    },
+    {
+      "path": "assets\\whale.png"
+    },
+    {
+      "path": "assets\\yellow-circle.png"
+    },
+    {
+      "path": "assets\\yellow-square.png"
+    },
+    {
+      "path": "choosing\\ichose\\index.html",
+      "old": true
+    },
+    {
+      "path": "choosing\\yabba\\index.html",
+      "old": true
+    },
+    {
+      "path": "CNAME",
+      "old": true
+    },
+    {
+      "path": "favicon1.png"
+    },
+    {
+      "path": "favicon2.png"
     },
     {
       "path": "index.html"
     },
     {
-      "path": "newpage\\index.html"
+      "path": "installing-unraid\\booting-into-unraid.md"
+    },
+    {
+      "path": "installing-unraid\\booting-into-unraid\\index.html"
+    },
+    {
+      "path": "installing-unraid\\first-time-setup.md"
+    },
+    {
+      "path": "installing-unraid\\first-time-setup\\index.html"
+    },
+    {
+      "path": "installing-unraid\\further-tinkering.md"
+    },
+    {
+      "path": "installing-unraid\\further-tinkering\\index.html"
+    },
+    {
+      "path": "installing-unraid\\unraid-usb-creator.md"
+    },
+    {
+      "path": "installing-unraid\\unraid-usb-creator\\index.html"
+    },
+    {
+      "path": "intro\\choosing-hardware.md"
+    },
+    {
+      "path": "intro\\choosing-hardware\\index.html"
+    },
+    {
+      "path": "intro\\common-unraid-terms.md"
+    },
+    {
+      "path": "intro\\common-unraid-terms\\index.html"
+    },
+    {
+      "path": "intro\\why-unraid.md"
+    },
+    {
+      "path": "intro\\why-unraid\\index.html"
+    },
+    {
+      "path": "llms.txt"
+    },
+    {
+      "path": "newpage\\index.html",
+      "old": true
+    },
+    {
+      "path": "readme.md"
+    },
+    {
+      "path": "remote-server-access\\authelia\\authelia-setup.md"
+    },
+    {
+      "path": "remote-server-access\\authelia\\authelia-setup\\index.html"
+    },
+    {
+      "path": "remote-server-access\\authelia\\oidc.md"
+    },
+    {
+      "path": "remote-server-access\\authelia\\oidc\\index.html"
+    },
+    {
+      "path": "remote-server-access\\authelia\\what-authelia.md"
+    },
+    {
+      "path": "remote-server-access\\authelia\\what-authelia\\index.html"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\creating-a-tunnel.md"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\creating-a-tunnel\\index.html"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\giving-access.md"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\giving-access\\index.html"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\initial-installation.md"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\initial-installation\\index.html"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\new-text-document.txt"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\purchasing-domain-cloudflare.md"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\purchasing-domain-cloudflare\\index.html"
+    },
+    {
+      "path": "remote-server-access\\cloudflare-tunnel\\what-is-cloudflare\\index.html",
+      "old": true
+    },
+    {
+      "path": "remote-server-access\\different-methods.md"
+    },
+    {
+      "path": "remote-server-access\\different-methods\\index.html"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\cloudflare.md"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\cloudflare\\index.html"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\extra-security-ddns.md"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\extra-security-ddns\\index.html"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\giving-access.md"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\giving-access\\index.html"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\intial-installation.md"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\intial-installation\\index.html"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\reverse-proxy.md"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\reverse-proxy\\index.html"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\what-is-port-forwarding.md"
+    },
+    {
+      "path": "remote-server-access\\port-forwarding\\what-is-port-forwarding\\index.html"
+    },
+    {
+      "path": "remote-server-access\\vpn\\giving-access.md"
+    },
+    {
+      "path": "remote-server-access\\vpn\\giving-access\\index.html"
+    },
+    {
+      "path": "remote-server-access\\vpn\\installation.md"
+    },
+    {
+      "path": "remote-server-access\\vpn\\installation\\index.html"
+    },
+    {
+      "path": "remote-server-access\\vpn\\subnet.md"
+    },
+    {
+      "path": "remote-server-access\\vpn\\subnet\\index.html"
+    },
+    {
+      "path": "remote-server-access\\vpn\\what-is-a-vpn.md"
+    },
+    {
+      "path": "remote-server-access\\vpn\\what-is-a-vpn\\index.html"
     },
     {
       "path": "resources\\css\\retype.css"
@@ -34,6 +578,9 @@
     },
     {
       "path": "resources\\js\\config.js"
+    },
+    {
+      "path": "resources\\js\\instagram.js"
     },
     {
       "path": "resources\\js\\lunr.js"
@@ -63,7 +610,31 @@
       "path": "robots.txt"
     },
     {
-      "path": "sitemap.xml.gz"
+      "path": "shares\\creating-shares.md"
+    },
+    {
+      "path": "shares\\creating-shares\\index.html"
+    },
+    {
+      "path": "shares\\mapping-shares.md"
+    },
+    {
+      "path": "shares\\mapping-shares\\index.html"
+    },
+    {
+      "path": "shares\\mover.md"
+    },
+    {
+      "path": "shares\\mover\\index.html"
+    },
+    {
+      "path": "shares\\share-permissions.md"
+    },
+    {
+      "path": "shares\\share-permissions\\index.html"
+    },
+    {
+      "path": "sitemap.xml"
     }
   ]
 }
