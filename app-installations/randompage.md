@@ -47,3 +47,25 @@ under plex under portforwarding add a snippet about using tailscale? about how s
 maybe mention how the slides are meant to be supplementary to the notes and not something you can follow fully on its own. 
 
 maybe add a section in the troubleshoot thats "got new internet nothing works?" then put the ipv6 warning and the way of booting up your switch, modem, router. 
+
+
+insert the text in the thing below, so that you can see the text also in dark mode. 
+
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+
+<div class="my-text">
+
+Your text here
+
+</div>
+
+- change the server desktop picture 
+- hdd temperature warnings
+- remove usb creator
+- update first time setup with new unraid 7.0.0 guide
+- check how the powerpoint resizes by default on laptop, and both monitors
+- add note for tailscale that it looks different but i dont want to reinstall tailscale for the fourth time on my production server. 
+- why is unraid weird/does things differntly? its because it was first made a long time ago. for example the unraid templates were made before docker compose was even a thing. next update it will become more modern 

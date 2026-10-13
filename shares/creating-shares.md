@@ -3,7 +3,13 @@ label: Creating Shares
 order: 1000
 icon: ../assets/pencil.png
 ---
-<div style="color: black;">
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+
+<div class="my-text">
+
 
 # Creating Shares
 
@@ -29,5 +35,7 @@ With **multiple shares**, you can **set different permissions** for each of them
 
 For your media, it's suggested to create a share called `data`, then a folder in it called `media`,  then create a folder for movies, tv, etc inside of that. So in the future if you ever want to automate your media with TRaSH Guides, the folder structure is already setup.
 
-
 </div>
+
+
+
