@@ -8,7 +8,7 @@ First thing you probably said was "maan, this added like a gazillion containers 
 
 ### 🚫 Disabling Apps
 
-There may be some features that are installed by default that you might not use. On the top right click on your **profile** → **Apps** → **Your apps**, and disable whatever you want.
+There may be some features that are installed by default that you might not use. On the top right click on your **profile** -> **Apps** -> **Your apps**, and disable whatever you want.
 
 ### 🔏 Change Password/New Account
 
@@ -25,7 +25,7 @@ You won't be able to change the username. Instead you'd have to create a new acc
 
 To enable 2FA:
 
-1. Click on your **profile** → **Administration Settings** → **Security** (under Administration)
+1. Click on your **profile** -> **Administration Settings** -> **Security** (under Administration)
 2. Toggle **Enforce two-factor authentication**.
 3. Then scroll up, and on the left, under the **Personal** header click **Security**, and **enable TOTP**.
 
@@ -33,7 +33,7 @@ To enable 2FA:
 
 With NPM, Nextcloud can be fussy. After I added this to NPMs settings for Nextcloud, the issues stopped happening.
 
-Go to **NPM** → edit the entry for **Nextcloud** → go to **Advanced** and **paste** the following:
+Go to **NPM** -> edit the entry for **Nextcloud** -> go to **Advanced** and **paste** the following:
 
 ```
 client_body_buffer_size 512k; 
@@ -53,7 +53,7 @@ Nextcloud does have a mobile app where you can view your files. However, the **i
 
 ### 🔄 Updating Nextcloud
 
-Updating Nextcloud is a little different. To update it, click on your **profile** → **Administration settings** → **Open Nextcloud AIO Interface** → click **stop containers** → click **start and update containers**. 
+Updating Nextcloud is a little different. To update it, click on your **profile** -> **Administration settings** -> **Open Nextcloud AIO Interface** -> click **stop containers** -> click **start and update containers**. 
 
 On the docker page it might say the master container still needs an update. So apply the update on there too.
 

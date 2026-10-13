@@ -1,4 +1,9 @@
-<div style="color: black;">
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+
+<div class="my-text">
 
 # Creating Shares
 
