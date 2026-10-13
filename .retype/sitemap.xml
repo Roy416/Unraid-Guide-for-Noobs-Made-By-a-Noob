@@ -1,190 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/</loc>
-    <lastmod>2025-11-16T22:09:27Z</lastmod>
+    <loc>https://noobs.unraid-guide.workers.dev/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/appsplugins/custom-docker-network/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/appsplugins/custom-docker-network/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/appsplugins/understanding-docker/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/appsplugins/understanding-docker/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/different-methods/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/different-methods/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/port-forwarding/reverse-proxy/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/port-forwarding/reverse-proxy/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/intro/why-unraid/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/intro/why-unraid/</loc>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/intro/common-unraid-terms/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/intro/common-unraid-terms/</loc>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/intro/choosing-hardware/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/intro/choosing-hardware/</loc>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/installing-unraid/unraid-usb-creator/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/installing-unraid/unraid-usb-creator/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/installing-unraid/booting-into-unraid/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/installing-unraid/booting-into-unraid/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/installing-unraid/first-time-setup/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/installing-unraid/first-time-setup/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/cloudflare-tunnel/giving-access/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/cloudflare-tunnel/giving-access/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/installing-unraid/further-tinkering/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/installing-unraid/further-tinkering/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/shares/creating-shares/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/shares/creating-shares/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/shares/share-permissions/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/shares/share-permissions/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/shares/mapping-shares/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/shares/mapping-shares/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/shares/mover/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/shares/mover/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/appsplugins/app-tips/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/appsplugins/app-tips/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/appsplugins/plugins/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/appsplugins/plugins/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/port-forwarding/giving-access/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/port-forwarding/giving-access/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/authelia/oidc/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/oidc/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/vpn/what-is-a-vpn/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/vpn/what-is-a-vpn/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/vpn/installation/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/vpn/installation/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/vpn/subnet/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/vpn/subnet/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/vpn/giving-access/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/vpn/giving-access/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/port-forwarding/what-is-port-forwarding/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/port-forwarding/what-is-port-forwarding/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/port-forwarding/cloudflare/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/port-forwarding/cloudflare/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/file-sharing/post-installation-setup/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/post-installation-setup/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/file-sharing/authelia-nextcloud/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/port-forwarding/intial-installation/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/port-forwarding/intial-installation/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/port-forwarding/extra-security-ddns/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/port-forwarding/extra-security-ddns/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/authelia-nextcloud/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/cloudflare-tunnel/purchasing-domain-cloudflare/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/cloudflare-tunnel/purchasing-domain-cloudflare/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/cloudflare-tunnel/initial-installation/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/cloudflare-tunnel/initial-installation/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/cloudflare-tunnel/creating-a-tunnel/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/cloudflare-tunnel/creating-a-tunnel/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/authelia/what-authelia/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/what-authelia/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/remote-server-access/authelia/authelia-setup/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/authelia-setup/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/media-server/plexvsjellyfin/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/forward-authentication/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/file-sharing/nextcloud/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/new-user/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/file-sharing/installation/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/media-server/plexvsjellyfin/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/file-sharing/using-tailscale-instead/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/nextcloud/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/file-sharing/external-storage/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/installation/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/mobile-photo-backup/0-immich/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/using-tailscale-instead/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/mobile-photo-backup/5-installation/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/external-storage/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/mobile-photo-backup/10-post-installation-setup/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/0-immich/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/mobile-photo-backup/15-external-path/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/5-installation/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/mobile-photo-backup/immich-public-proxy/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/10-post-installation-setup/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/backup/appdata-backup/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/15-external-path/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/media-server/plex/installation/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/immich-public-proxy/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/trash/newmd1-copy-copy-(2)/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/authelia-setup/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/trash/newmd1-copy/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/media-server/plex/installation/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/media-server/plex/plex-tips/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/media-server/plex/plex-tips/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/media-server/jellyfin/install/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/media-server/jellyfin/install/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/media-server/jellyfin/jellyfin1/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/media-server/jellyfin/jellyfin1/</loc>
+    <lastmod>2026-10-10T10:05:56Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/trash/newmd1-copy-copy/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/trash/newmd1-copy/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/trash/newmd1-copy-copy-(3)/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/randompage/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/trash/newmd1-copy-copy-(4)/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/backup/appdata-backup/installation/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/trash/newmd1-copy-copy-(5)/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/backup/appdata-backup/restoring-backup/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/trash/newmd1-copy-copy-(6)/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/backup/backup-online/about-backup/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/randompage/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/backup/backup-online/backup-to-online-storage/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
   <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/backup/backup-online/about-backup/</loc>
-  </url>
-  <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/backup/backup-online/backup-to-online-storage/</loc>
-  </url>
-  <url>
-    <loc>https://unraidguide.github.io/unraid-guide/app-installations/backup/backup-online/restore-backup/</loc>
+    <loc>https://noobs.unraid-guide.workers.dev/app-installations/backup/backup-online/acessing-backup/</loc>
+    <lastmod>2026-10-13T00:04:49Z</lastmod>
   </url>
 </urlset>

@@ -1,6 +1,6 @@
 {
   "version": "4.6.0",
-  "created": "2026-10-10T13:59:52Z",
+  "created": "2026-10-13T04:10:55Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,10 +9,24 @@
       "path": "404.html"
     },
     {
-      "path": "app-installations\\backup\\appdata-backup.md"
+      "path": "app-installations\\backup\\appdata-backup.md",
+      "old": true
     },
     {
-      "path": "app-installations\\backup\\appdata-backup\\index.html"
+      "path": "app-installations\\backup\\appdata-backup\\index.html",
+      "old": true
+    },
+    {
+      "path": "app-installations\\backup\\appdata-backup\\installation.md"
+    },
+    {
+      "path": "app-installations\\backup\\appdata-backup\\installation\\index.html"
+    },
+    {
+      "path": "app-installations\\backup\\appdata-backup\\restoring-backup.md"
+    },
+    {
+      "path": "app-installations\\backup\\appdata-backup\\restoring-backup\\index.html"
     },
     {
       "path": "app-installations\\backup\\backup-online\\about-backup.md"
@@ -21,16 +35,24 @@
       "path": "app-installations\\backup\\backup-online\\about-backup\\index.html"
     },
     {
+      "path": "app-installations\\backup\\backup-online\\acessing-backup.md"
+    },
+    {
+      "path": "app-installations\\backup\\backup-online\\acessing-backup\\index.html"
+    },
+    {
       "path": "app-installations\\backup\\backup-online\\backup-to-online-storage.md"
     },
     {
       "path": "app-installations\\backup\\backup-online\\backup-to-online-storage\\index.html"
     },
     {
-      "path": "app-installations\\backup\\backup-online\\restore-backup.md"
+      "path": "app-installations\\backup\\backup-online\\restore-backup.md",
+      "old": true
     },
     {
-      "path": "app-installations\\backup\\backup-online\\restore-backup\\index.html"
+      "path": "app-installations\\backup\\backup-online\\restore-backup\\index.html",
+      "old": true
     },
     {
       "path": "app-installations\\backup\\backup-to-online-storage\\index.html",
@@ -143,6 +165,12 @@
       "path": "app-installations\\mobile-photo-backup\\5-installation\\index.html"
     },
     {
+      "path": "app-installations\\mobile-photo-backup\\authelia-setup.md"
+    },
+    {
+      "path": "app-installations\\mobile-photo-backup\\authelia-setup\\index.html"
+    },
+    {
       "path": "app-installations\\mobile-photo-backup\\immich-public-proxy.md"
     },
     {
@@ -155,40 +183,52 @@
       "path": "app-installations\\randompage\\index.html"
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(2).md"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(2).md",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(2)\\index.html"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(2)\\index.html",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(3).md"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(3).md",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(3)\\index.html"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(3)\\index.html",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(4).md"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(4).md",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(4)\\index.html"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(4)\\index.html",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(5).md"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(5).md",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(5)\\index.html"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(5)\\index.html",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(6).md"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(6).md",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy-(6)\\index.html"
+      "path": "app-installations\\trash\\newmd1-copy-copy-(6)\\index.html",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy.md"
+      "path": "app-installations\\trash\\newmd1-copy-copy.md",
+      "old": true
     },
     {
-      "path": "app-installations\\trash\\newmd1-copy-copy\\index.html"
+      "path": "app-installations\\trash\\newmd1-copy-copy\\index.html",
+      "old": true
     },
     {
       "path": "app-installations\\trash\\newmd1-copy.md"
@@ -245,6 +285,9 @@
       "path": "assets\\configuration.yml"
     },
     {
+      "path": "assets\\counterclockwise-arrows.png"
+    },
+    {
       "path": "assets\\desktop-computer.png"
     },
     {
@@ -261,6 +304,9 @@
     },
     {
       "path": "assets\\floppy-disk.png"
+    },
+    {
+      "path": "assets\\floppy.png"
     },
     {
       "path": "assets\\forward.png"
@@ -326,6 +372,9 @@
       "path": "assets\\pencil.png"
     },
     {
+      "path": "assets\\phone.png"
+    },
+    {
       "path": "assets\\play.png"
     },
     {
@@ -388,8 +437,7 @@
       "old": true
     },
     {
-      "path": "CNAME",
-      "old": true
+      "path": "CNAME"
     },
     {
       "path": "favicon1.png"
@@ -457,6 +505,18 @@
     },
     {
       "path": "remote-server-access\\authelia\\authelia-setup\\index.html"
+    },
+    {
+      "path": "remote-server-access\\authelia\\forward-authentication.md"
+    },
+    {
+      "path": "remote-server-access\\authelia\\forward-authentication\\index.html"
+    },
+    {
+      "path": "remote-server-access\\authelia\\new-user.md"
+    },
+    {
+      "path": "remote-server-access\\authelia\\new-user\\index.html"
     },
     {
       "path": "remote-server-access\\authelia\\oidc.md"

@@ -1,4 +1,4 @@
-[!badge text="Note" variant="danger"] Only set this up, if you are planning to add a client right after. Since if you set this up and don't have an app to use it, **Authelia won't start**. This set up only has to be done once. 
+[!badge text="Note" variant="danger"] Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app use it, **Authelia won't start**. This only has to be set up once.
 
 ### Setting up OIDC
 

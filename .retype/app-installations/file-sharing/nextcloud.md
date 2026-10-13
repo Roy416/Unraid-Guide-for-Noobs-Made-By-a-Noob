@@ -12,7 +12,7 @@ Nextcloud gets a bad rap for being bloated and being fussy. So, many people set 
 
 |           |           |
 | --------- | --------- | 
-| Seafile    | Probably the closest to Nextcloud in terms of basic functionality. Super efficient file syncing, so good for a lot of files. More finicky to install. </p><p>Your files are stored as little chunks in its database, which is more secure but you aren't able to see your files straight up on your server. Although, you can could a script and use rsync to copy your files into a share as a workaround.  |
+| Seafile    | Probably the closest to Nextcloud in terms of basic functionality. Super efficient file syncing, so good for a lot of files. More finicky to install. </p><p>Your files are stored as little chunks in its database, which is more secure but you aren't able to see your files straight up on your server. Although, you can run a script and use rsync to copy your files into a share as a workaround.  |
 | Syncthing    | Syncs your files across multiple devices but doesn't store your files on the server.   | 
 
 </div>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://unraidguide.github.io/unraid-guide/sitemap.xml
+Sitemap: https://noobs.unraid-guide.workers.dev/sitemap.xml
