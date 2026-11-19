@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845180079016">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848447485791">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon2.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.845180079016" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848447485791" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -135,17 +135,23 @@
 
                 <!-- Page content  -->
 <h1 id="add-a-new-user">Add a New User</h1>
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+<div class="my-text">
 <ol>
-<li>Go to Authelia&#x27;s appdata folder and open users_database.yml.</li>
-<li>Copy and paste the existing user. Make sure the indentation is the same!</li>
-<li>Open the terminal and type the command below. As before, the random password is what the user will log into Authelia with.</li>
+<li>Go to <strong>Authelia&#x27;s appdata</strong> folder and open <code translate="no" v-pre>users_database.yml</code>.</li>
+<li>Copy and paste the existing user. Make sure the indentation is the same! <strong>Change the name</strong> for the second user.</li>
+<li>Open the <strong>terminal</strong> and type the command below. As before, the random password is what the user will log into Authelia with.</li>
 </ol>
 <div id="add-a-new-user-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">docker run --rm authelia/authelia:latest authelia crypto hash generate argon2 --random --random.length 64 --random.charset alphanumeric</code></pre>
 </doc-codeblock></div>
 <ol start="4">
-<li>Paste the digest in password. Change the remaining fields.</li>
+<li>Paste the <strong>digest</strong> in password. Change the remaining fields.</li>
 </ol>
+</div>
 
                 
                 <!-- Required only on API pages -->

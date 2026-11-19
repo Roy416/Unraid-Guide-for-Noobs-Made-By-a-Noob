@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845180079016">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848447485791">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>OIDC Setup*</title>
     <meta name="title" content="OIDC Setup*">
-    <meta name="description" content="Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app use it, Authelia won't start. This only has to be set up once.">
+    <meta name="description" content="Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app to use it, Authelia won't start. This only has to be set up once.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/oidc/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/oidc/">
     <meta property="og:title" content="OIDC Setup*">
-    <meta property="og:description" content="Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app use it, Authelia won't start. This only has to be set up once.">
+    <meta property="og:description" content="Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app to use it, Authelia won't start. This only has to be set up once.">
     <meta property="og:site_name" content="Unraid Guide for Noobs Made by a Noob">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/oidc/">
     <meta name="twitter:title" content="OIDC Setup*">
-    <meta name="twitter:description" content="Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app use it, Authelia won't start. This only has to be set up once.">
+    <meta name="twitter:description" content="Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app to use it, Authelia won't start. This only has to be set up once.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/oidc.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon2.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.845180079016" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848447485791" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -135,38 +135,44 @@
 
                 <!-- Page content  -->
 <h1 id="oidc-setup">OIDC Setup*</h1>
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+<div class="my-text">
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-danger-text bg-badge-danger border border-badge-danger-border h-6 px-2 text-xs rounded-md">
     <span>Note</span>
-</span> Only set this up, if you are planning to add a client right after. Because if you set this up and don&#x27;t have an app use it, <strong>Authelia won&#x27;t start</strong>. This only has to be set up once.</p>
-<h3 id="setting-up-oidc">Setting up OIDC</h3>
+</span> Only set this up, if you are planning to add a client right after. Because if you set this up and don&#x27;t have an app to use it, <strong>Authelia won&#x27;t start</strong>. This only has to be set up once.</p>
+<h3 id="-setting-up-oidc"><span class="docs-emoji">&#x1F6E0;&#xFE0F;</span> Setting up OIDC</h3>
 <ol>
 <li>
-<p>Go to Authelia&#x27;s appdata folder and open configuration.yml. Scroll down until you see <code translate="no" v-pre>identity_providers</code>. I&#x27;ve pasted it beforehand to avoid you the trouble of messing with indentations. Simply remove the hashtag.</p>
+<p>Open configuration.yml and scroll down until you see <code translate="no" v-pre>identity_providers</code>. I&#x27;ve pasted this section beforehand to avoid you the trouble of messing with indentations. Simply remove the hashtags.</p>
 </li>
 <li>
-<p>To get the HMAC secret, open the terminal and type this and paste it in there:</p>
+<p>To get the <strong>HMAC secret</strong>, open the <strong>terminal</strong>, type the command below and paste it in the <code translate="no" v-pre>hmac_secret</code> field:</p>
 </li>
 </ol>
-<div id="setting-up-oidc-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="-setting-up-oidc-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">docker run --rm authelia/authelia:latest authelia crypto rand --length 64 --charset alphanumeric</code></pre>
 </doc-codeblock></div>
 <ol start="3">
-<li>Now CD into the appdata for authelia with <code translate="no" v-pre>/cd /mnt/user/appdata/Authelia</code> and paste:</li>
+<li>Type <code translate="no" v-pre>cd /mnt/user/appdata/Authelia</code> to get into Authelia&#x27;s Appdata folder and type this:</li>
 </ol>
-<div id="setting-up-oidc-code-2" class="codeblock-wrapper"><doc-codeblock>
+<div id="-setting-up-oidc-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">docker run --rm -u &quot;$(id -u):$(id -g)&quot; -v &quot;$(pwd)&quot;:/keys authelia/authelia:latest authelia crypto pair rsa generate --directory /keys</code></pre>
 </doc-codeblock></div>
 <ol start="4">
-<li>This created a private.pem file in Authelia&#x27;s appdata folder. Copy the contents in the private.pem file and paste it under key. It&#x27;s crucial for the identation to be the same as the example text.</li>
+<li>This created a private.pem file in Authelia&#x27;s appdata folder. <strong>Copy the contents</strong> in the private.pem file and paste it under key. It&#x27;s <strong>crucial for the identation</strong> to be the same as the example text.</li>
 <li>Now continue with the installation instructions for the app you wanted to add to Authelia with OIDC.</li>
 </ol>
-<h3 id="hacking-way">hacking way</h3>
-<p>but they can still login with the nextcloud user and pass by adding <code translate="no" v-pre>?direct=1</code> to the end of the nextcloud site. to disable this, go into advanced settings for proxy in npm and add</p>
-<div id="hacking-way-code-1" class="codeblock-wrapper"><doc-codeblock>
+<h3 id="-disabling-a-workaround"><span class="docs-emoji">&#x1FA79;</span> Disabling a Workaround</h3>
+<p>For some apps including Nextcloud and Immich, you can add <code translate="no" v-pre>?direct=1</code> to the end of the URL and it&#x27;ll bypass Authelia&#x27;s authentification and let you login with the sites native login, which is very silly. To disable this, go into <strong>Advanced settings</strong> ( the cog) for a proxy in NPM and add:</p>
+<div id="-disabling-a-workaround-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">if ($arg_direct = &quot;1&quot;) {
     return 403;
 }</code></pre>
 </doc-codeblock></div>
+</div>
 
                 
                 <!-- Required only on API pages -->

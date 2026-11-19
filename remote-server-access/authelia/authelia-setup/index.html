@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845180079016">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848447485791">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon2.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.845180079016" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848447485791" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -152,22 +152,27 @@
         </div>
     </div>
 </div>
-<h3 id="setting-up-configuration-files">Setting up configuration files</h3>
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+<div class="my-text">
+<h3 id="-setting-up-configuration-files"><span class="docs-emoji">&#x2B07;&#xFE0F;</span> Setting up configuration files</h3>
 <ol>
-<li>Install Authelia. if you&#x27;re using custom docker networks, make sure it&#x27;s on a network that NginxProxyManager has access to.</li>
-<li>Open the Unraid terminal and run this command. This will create three random strings. Keep these on a temporary notepad:</li>
+<li><strong>Install</strong> the official container of Authelia. If you&#x27;re using custom docker networks and using port forwarding, make sure it&#x27;s on a network that Nginx Proxy Manager has access to.</li>
+<li>Open the <strong>Unraid terminal</strong> and run this command. This will create three random strings. Keep these on a temporary notepad:</li>
 </ol>
-<div id="setting-up-configuration-files-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="-setting-up-configuration-files-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">for i in 1 2 3; do openssl rand -base64 32; done</code></pre>
 </doc-codeblock></div>
 <ol start="3">
-<li>Now enter the command below. The random password is the password to your Authelia account. Keep both of these in a temporary notepad as well. This will also create a container with a funny name, you can delete it after.</li>
+<li>Enter the command below. This will create a random password and a &quot;Digest&quot;. The random password being the <strong>password to your Authelia account</strong>. Keep both of these in a temporary notepad as well. This will also create a container with a funny name, you can delete it after.</li>
 </ol>
-<div id="setting-up-configuration-files-code-2" class="codeblock-wrapper"><doc-codeblock>
+<div id="-setting-up-configuration-files-code-2" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">docker run --rm authelia/authelia:latest authelia crypto hash generate argon2 --random --random.length 64 --random.charset alphanumeric</code></pre>
 </doc-codeblock></div>
 <ol start="4">
-<li>Download these files. They are based off of <a href="https://github.com/AlienTech42/unraid-config-files/tree/main/authelia">AlienTech42&#x27;s configs</a>:</li>
+<li><strong>Download</strong> these files. They are based off of <a href="https://github.com/AlienTech42/unraid-config-files/tree/main/authelia">AlienTech42&#x27;s configs</a>:</li>
 </ol>
 <p>
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
@@ -179,7 +184,7 @@
     </div>
     <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
         <span>configuration.yml</span>
-        <span class="inline-block ml-2">2.98KB</span>
+        <span class="inline-block ml-2">3.29KB</span>
     </div>
     <a href="../../../assets/configuration.yml" class="absolute block inset-0" target="_blank" download="configuration.yml"></a>
 </div>
@@ -200,31 +205,28 @@
 </div>
 </p>
 <ol start="5">
-<li>Open configuration.yml with an editor. Replace <code translate="no" v-pre>YOUR_DOMAIN</code> with your domain (e.g. <a href="https://nextcloud.example.com">https://nextcloud.example.com</a>, the domain is example). A replace all feature would be handy here.</li>
-<li>There are 3 lines where you must replace <code translate="no" v-pre>REPLACE_WITH_RANDOM_STRING</code> with the three random strings you created before. Under:
+<li>Open <strong>configuration.yml</strong> with an editor. Replace all the sections that have <code translate="no" v-pre>YOUR_DOMAIN</code> with your domain (e.g. <a href="https://nextcloud.example.com">https://nextcloud.example.com</a>, the domain is <code translate="no" v-pre>example</code>). A replace all feature would be handy here.</li>
+<li>There are 3 lines where you must replace <code translate="no" v-pre>REPLACE_WITH_RANDOM_STRING</code> with the three random strings you created before. Under: 1) <strong>session</strong>, 2) <strong>storage</strong>, and 3) <strong>identity_validation</strong>. <strong>Save</strong> the file.</li>
+<li>Open <strong>users_database.yml</strong>. Under users, <strong>rename</strong> <code translate="no" v-pre>user</code> to what you want your login name to be. Replace the <strong>password with the Digest</strong> you created before. Change the display name and email. Click <strong>Save</strong>.
 <ul>
-<li>session, secret.</li>
-<li>storage, encryption_key.</li>
-<li>identity_validation, jwt_secret.</li>
-<li>Save the file.</li>
+<li>By itself, <code translate="no" v-pre>admins</code> in groups means nothing. This part of the Access Control Lists (ACL), for when you want only certain people to access the site. Refer to the subject section in <a href="https://www.authelia.com/configuration/security/access-control/#configuration">this configuration</a>.</li>
 </ul>
 </li>
-<li>Open users_database.yml. Under users, rename <code translate="no" v-pre>user</code> to what you want your login name to be. Replace the password with the Digest you created before. And change the display name and email. Click Save.
-<ul>
-<li>By itself, <code translate="no" v-pre>admins</code> in groups means nothing. This is for Access Control Lists (ACL), for when you want only certain people to access the site. Refer to the subject section in <a href="https://www.authelia.com/configuration/security/access-control/#configuration">this configuration</a></li>
-</ul>
-</li>
-<li>On Unraid go to Authelia&#x27;s appdata folder. Delete the configuration.yml that exists, and upload the configuration.yml and the users_database.yml you just edited. Restart Authelia.</li>
+<li>Go to <strong>Authelia&#x27;s appdata</strong> folder. <strong>Delete</strong> the configuration.yml that exists, and <strong>upload</strong> the configuration.yml and the users_database.yml that you just edited. <strong>Restart</strong> Authelia.</li>
 </ol>
-<h3 id="exposing-authelia">Exposing Authelia</h3>
+<h3 id="-exposing-authelia">👁 Exposing Authelia</h3>
 <ol>
-<li>Expose Authelia as your normally would with either portforwarding or cloudflare tunnels. The protocol is <code translate="no" v-pre>http</code>, the port is <code translate="no" v-pre>9091</code>, and set the subdomain to <code translate="no" v-pre>auth</code>.</li>
-<li>Go to your Authelia site, login with the password you created in step 3 above.</li>
-<li>Click Register device and either select WebAuthn Credentials (passkey) or One-Time Password (authenticator app). It will ask for a OTP. Go to the appdata folder for Authelia and open <code translate="no" v-pre>notifications.txt</code> to get it.</li>
-<li>Then depending on what you chose, continue setting up via authenticator app or password manager.</li>
+<li><strong>Expose Authelia</strong> as you normally would with either port forwarding or Cloudflare tunnel. The protocol is <code translate="no" v-pre>http</code>, the port is <code translate="no" v-pre>9091</code>, and set the subdomain to <code translate="no" v-pre>auth</code>.</li>
+<li>Go to your <strong>Authelia site</strong> and login with the password you created in Step 3 above.</li>
+<li>Click <strong>Register device</strong> and either select WebAuthn Credentials (passkey) or One-Time Password (authenticator app). It will ask for a one time password. Go to Authelia&#x27;s appdata folder and open <code translate="no" v-pre>notifications.txt</code> to get it.</li>
+<li>Then depending on what you chose, continue setting up via an authenticator app or password manager.</li>
 </ol>
-<p>Sometimes when you log into your authelia site and put your 2FA in, it&#x27;ll give you a blank screen. In the url field add the <code translate="no" v-pre>auth.</code> back in infront of your domain, for whatever reason it removes it. Then youll be able to manage your devices.</p>
-<p>Even though you have 2FA enabled, if you log into Authelia with just your user and password, it&#x27;ll let you manage your devices without completing the 2FA. Fortunatley, if a person does get in, they can&#x27;t really do anything, since it requires them to have access to your server files to make any changes.</p>
+<h3 id="-authelias-quirk"><span class="docs-emoji">&#x1F92A;</span> Authelia&#x27;s Quirk</h3>
+<p>Even if you have 2FA enabled and you log into Authelia with just your user and password, it&#x27;ll let you manage your devices without completing the 2FA. Which sounds kind of unsafe. Fortunately, if a person does guess your password, they can&#x27;t really do anything since it requires them to have access to your server files to make any changes.</p>
+<h3 id="-blank-screen">🖵 Blank Screen?</h3>
+<p>Sometimes when you log into your Authelia site and put your 2FA in, it&#x27;ll give you a blank screen. In the URL field add the <code translate="no" v-pre>auth.</code> back in front of your domain. For whatever reason it removes it. Then you&#x27;ll be able to manage your devices.</p>
+</div>
+   
 
                 
                 <!-- Required only on API pages -->

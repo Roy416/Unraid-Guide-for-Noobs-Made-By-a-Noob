@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845180079016">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848447485791">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Authelia Setup</title>
     <meta name="title" content="Authelia Setup">
-    <meta name="description" content="Set up OIDC for Authelia if you havent already.">
+    <meta name="description" content="Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/authelia-nextcloud/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/authelia-nextcloud/">
     <meta property="og:title" content="Authelia Setup">
-    <meta property="og:description" content="Set up OIDC for Authelia if you havent already.">
+    <meta property="og:description" content="Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.">
     <meta property="og:site_name" content="Unraid Guide for Noobs Made by a Noob">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/authelia-nextcloud/">
     <meta name="twitter:title" content="Authelia Setup">
-    <meta name="twitter:description" content="Set up OIDC for Authelia if you havent already.">
+    <meta name="twitter:description" content="Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/authelia-nextcloud.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon2.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.845180079016" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848447485791" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -135,28 +135,34 @@
 
                 <!-- Page content  -->
 <h1 id="authelia-setup">Authelia Setup</h1>
-<div style="color: black;">
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+<div class="my-text">
+<p>Things might update and change. Refer to <a href="https://www.authelia.com/integration/openid-connect/clients/nextcloud/">Authelia&#x27;s Unofficial instructions</a> if you&#x27;re having trouble.</p>
 <ol>
 <li>Set up <a href="../../../remote-server-access/authelia/oidc/">OIDC for Authelia</a> if you havent already.</li>
-<li>Go to Authelia&#x27;s appdata folder and open the configuration.yml. Scroll down until you see <code translate="no" v-pre>clients</code>. Delete the hashtag for the client header and the nextcloud section.</li>
-<li>Open the terminal and run the command below.</li>
+<li>Go to <strong>Authelia&#x27;s appdata</strong> folder and open the <strong>configuration.yml</strong>. Scroll down until you see <code translate="no" v-pre>clients</code>. Delete the hashtags for the client header and the nextcloud section.</li>
+<li>Open the <strong>terminal</strong> and run the command below:</li>
 </ol>
 <div id="authelia-setup-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">docker run --rm authelia/authelia:latest authelia crypto hash generate pbkdf2 --variant sha512 --random --random.length 72 --random.charset rfc3986</code></pre>
 </doc-codeblock></div>
 <ol start="4">
-<li>This created a random password and a Digest. Paste the Digest password in client secret field (with the quotes).</li>
-<li>Under <code translate="no" v-pre>redirect_uris</code>, replace YOUR_DOMAIN with your domain. Save the file and restart Authelia.</li>
-<li>Go to Nextcloud and install the app called <code translate="no" v-pre>OpenID Connect user backend</code>.</li>
-<li>Go to your profile -&gt; administration settings -&gt; click OpenID Connect (under administration) and click add a Registered Provider.</li>
+<li>This created a random password and a Digest. Paste the <strong>Digest password</strong> in the <strong>client secret</strong> field (within the quotes).</li>
+<li>Under <code translate="no" v-pre>redirect_uris</code>, replace <strong>YOUR_DOMAIN</strong> with your domain. <strong>Save</strong> the file and <strong>restart</strong> Authelia.</li>
+<li>Go to <strong>Nextcloud</strong> and install the app called <code translate="no" v-pre>OpenID Connect user backend</code>.</li>
+<li>Go to your <strong>profile</strong> -&gt; <strong>administration settings</strong> -&gt; <strong>click OpenID Connect</strong> (under administration) and click add a <strong>Registered Provider</strong>.</li>
 <li>Enter the following fields:</li>
 </ol>
 <retype-table copy-text="| Field | Value  | 
 | --------- | --------- | 
 | Identifier   | Authelia    |     
-| client_id    | nextcloud   |     
+| Client ID    | nextcloud   |
+| Client secret | The random password from Step 3             |
 | Discovery endpoint   | https://auth.YOUR_DOMAIN.com/.well-known/openid-configuration - Add your domain   | 
-| scope    | openid email profile groups   |    
+| Scope    | openid email profile groups   |    
 | Attribute Mapping   | preferred_username     |     
 | Authentication and Access Control Settings    | Uncheck use unique user ID    |">
 <div class="table-wrapper scrollbar overflow-hidden">
@@ -173,15 +179,19 @@
 <td>Authelia</td>
 </tr>
 <tr>
-<td>client_id</td>
+<td>Client ID</td>
 <td>nextcloud</td>
+</tr>
+<tr>
+<td>Client secret</td>
+<td>The random password from Step 3</td>
 </tr>
 <tr>
 <td>Discovery endpoint</td>
 <td>https://auth.YOUR_DOMAIN.com/.well-known/openid-configuration - Add your domain</td>
 </tr>
 <tr>
-<td>scope</td>
+<td>Scope</td>
 <td>openid email profile groups</td>
 </tr>
 <tr>
@@ -197,14 +207,12 @@
 </div>
 </retype-table>
 <ol start="9">
-<li>Log out of Nextcloud and try log back in, and you&#x27;ll see a Login with Authelia button now!</li>
+<li><strong>Log out</strong> of Nextcloud and try log back in, and you&#x27;ll see a Login with Authelia button now!</li>
+<li>If you want to remove the regular login, type this in the terminal:</li>
 </ol>
-<p><strong>how to remove regular login</strong></p>
-<p>&#x27;hide_login_form&#x27; =&gt; true,
-&#x27;auth.webauthn.enabled&#x27; =&gt; false,
-&#x27;simpleSignUpLink.shown&#x27; =&gt; false,</p>
-<p>try changing this in the config.php</p>
-<p>link the page for nextcloud-aio for authelia</p>
+<div id="authelia-setup-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">sudo docker exec --user www-data nextcloud-aio-nextcloud php occ config:system:set hide_login_form --type=boolean --value=true</code></pre>
+</doc-codeblock></div>
 </div>
 
                 

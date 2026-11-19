@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845180079016">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848447485791">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Forward Authentication</title>
     <meta name="title" content="Forward Authentication">
-    <meta name="description" content="web app only Now lets setup an app to use authelia. If you're using cloudflare tunnels, this requires you to set up Nginx Proxy Manager.">
+    <meta name="description" content="Now let's set up an app to use Authelia. If you're using Cloudflare tunnel, this requires you to set up Nginx Proxy Manager. This method is for apps that are only used through the web (not with desktop or mobile apps).">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/forward-authentication/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/forward-authentication/">
     <meta property="og:title" content="Forward Authentication">
-    <meta property="og:description" content="web app only Now lets setup an app to use authelia. If you're using cloudflare tunnels, this requires you to set up Nginx Proxy Manager.">
+    <meta property="og:description" content="Now let's set up an app to use Authelia. If you're using Cloudflare tunnel, this requires you to set up Nginx Proxy Manager. This method is for apps that are only used through the web (not with desktop or mobile apps).">
     <meta property="og:site_name" content="Unraid Guide for Noobs Made by a Noob">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/forward-authentication/">
     <meta name="twitter:title" content="Forward Authentication">
-    <meta name="twitter:description" content="web app only Now lets setup an app to use authelia. If you're using cloudflare tunnels, this requires you to set up Nginx Proxy Manager.">
+    <meta name="twitter:description" content="Now let's set up an app to use Authelia. If you're using Cloudflare tunnel, this requires you to set up Nginx Proxy Manager. This method is for apps that are only used through the web (not with desktop or mobile apps).">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/forward-authentication.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon2.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.845180079016" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848447485791" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -135,16 +135,20 @@
 
                 <!-- Page content  -->
 <h1 id="forward-authentication">Forward Authentication</h1>
-<p>web app only
-Now lets setup an app to use authelia. If you&#x27;re using cloudflare tunnels, this requires you to set up Nginx Proxy Manager.</p>
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+<div class="my-text">
+<p>Now let&#x27;s set up an app to use Authelia. If you&#x27;re using Cloudflare tunnel, this requires you to set up Nginx Proxy Manager. This method is for apps that are only used through the web (not with desktop or mobile apps).</p>
 <ol start="0">
-<li>In the configuration.yml by default, I made it so every site that uses Authelia through NPM is automatically set to two factored authenication, so you dont have to go into the config every time.
+<li>In the configuration.yml, I set it up so every site that uses Authelia through NPM is automatically set to two factor authentication, so you don&#x27;t have to edit the config every time.
 <ul>
-<li>If you want to change this, remove the asterix on line 33, and uncomment lines 45 and 46.</li>
+<li>If you want to change this, remove the asterisk on line 33, and manually add in the sites that you want to use 2FA.</li>
 </ul>
 </li>
-<li>Set up your app for remote access. If you&#x27;re using cloudflare tunnels, create a proxy for it within NPM too.</li>
-<li>Edit the proxy, click the cog on the top right, then paste the script below respective to the method you chose, replacing <code translate="no" v-pre>SERVER_IP</code> and <code translate="no" v-pre>YOUR_DOMAIN</code> with your own:</li>
+<li><strong>Set up the remote access</strong> for the app you want behind Authelia. If you&#x27;re using Cloudflare tunnel, create a proxy for it within NPM too.</li>
+<li>In NPM, <strong>edit the proxy</strong>, click the <strong>cog</strong> on the top right, then <strong>paste the script</strong> below respective to the method you chose. Replace <code translate="no" v-pre>SERVER_IP</code> and <code translate="no" v-pre>YOUR_DOMAIN</code> with your own:</li>
 </ol>
 <doc-panel id="span-data-gb-custom-inline-data-tagemoji-data-code1f511span-port-forwarding" collapsed>
     <template #title><span data-gb-custom-inline data-tag="emoji" data-code="1f511"><span class="docs-emoji">&#x23E9;</span></span> Port Forwarding</template>
@@ -159,20 +163,26 @@ auth_request /authelia;
 # Internal Authelia verification endpoint
 location = /authelia {
     internal;
-    proxy_pass http://SERVER_IP:9091/api/verify;
+    proxy_pass http://SERVER_IP:9091/api/verify;  # CHANGE
+	
+	# REQUIRED for Cloudflare Tunnel setups
+    # Force HTTPS since Cloudflare terminates SSL
 
     proxy_set_header X-Original-URL $scheme://$host$request_uri;
     proxy_set_header X-Forwarded-Proto $scheme;
 
+	# Forward client IP info to Authelia
+	
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 
     # Required for auth_request
-    proxy_pass_request_body off;
     proxy_set_header Content-Length &quot;&quot;;
+	proxy_pass_request_body off;
 }
 
-error_page 401 =302 https://auth.YOUR_DOMAIN.com/?rd=$scheme://$host$request_uri;</code></pre>
+# Redirect unauthenticated users to Authelia login
+error_page 401 =302 https://auth.YOUR_DOMAIN.com/?rd=$scheme://$host$request_uri;  # CHANGE</code></pre>
 </doc-codeblock></div>
 </doc-panel>
 <doc-panel id="span-data-gb-custom-inline-data-tagemoji-data-code1f511span-cloudflare-tunnels" collapsed>
@@ -210,6 +220,7 @@ location /authelia {
 error_page 401 =302 https://auth.YOUR_DOMAIN.com/?rd=https://$http_host$request_uri;  # CHANGE</code></pre>
 </doc-codeblock></div>
 </doc-panel>
+</div>
 
                 
                 <!-- Required only on API pages -->

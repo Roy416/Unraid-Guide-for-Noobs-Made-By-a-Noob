@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845180079016">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848447485791">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Authelia setup</title>
-    <meta name="title" content="Authelia setup">
+    <title>Authelia Setup</title>
+    <meta name="title" content="Authelia Setup">
+    <meta name="description" content="Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/authelia-setup/">
@@ -20,14 +21,16 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/authelia-setup/">
-    <meta property="og:title" content="Authelia setup">
+    <meta property="og:title" content="Authelia Setup">
+    <meta property="og:description" content="Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.">
     <meta property="og:site_name" content="Unraid Guide for Noobs Made by a Noob">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/authelia-setup/">
-    <meta name="twitter:title" content="Authelia setup">
+    <meta name="twitter:title" content="Authelia Setup">
+    <meta name="twitter:description" content="Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/authelia-setup.md">
@@ -35,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../favicon2.png" />
-    <link href="../../../resources/css/retype.css?v=4.6.0.845180079016" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.848447485791" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -131,7 +134,71 @@
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
-<h1 id="authelia-setup">Authelia setup</h1>
+<h1 id="authelia-setup">Authelia Setup</h1>
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+<div class="my-text">
+<p>Things might update and change. Refer to <a href="https://www.authelia.com/integration/openid-connect/clients/immich/">Authelia&#x27;s Unofficial instructions</a> if you&#x27;re having trouble.</p>
+<ol>
+<li>Set up <a href="../../../remote-server-access/authelia/oidc/">OIDC for Authelia</a> if you havent already.</li>
+<li>Go to <strong>Authelia&#x27;s appdata</strong> folder and open the <strong>configuration.yml</strong>. Scroll down until you see <code translate="no" v-pre>clients</code>. Delete the hashtags for the client header and the immich section.</li>
+<li>Open the <strong>terminal</strong> and run the command below:</li>
+</ol>
+<div id="authelia-setup-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">docker run --rm authelia/authelia:latest authelia crypto hash generate pbkdf2 --variant sha512 --random --random.length 72 --random.charset rfc3986</code></pre>
+</doc-codeblock></div>
+<ol start="4">
+<li>This created a random password and a Digest. Paste the <strong>Digest password</strong> in the <strong>client secret</strong> field (within the quotes).</li>
+<li>Under <code translate="no" v-pre>redirect_uris</code>, replace <strong>YOUR_DOMAIN</strong> with your domain. <strong>Save</strong> the file and <strong>restart</strong> Authelia.</li>
+<li>Go to <strong>Immich</strong> -&gt; <strong>Administration</strong> -&gt; <strong>Authentication Settings</strong> -&gt; <strong>OAuth</strong>. Toggle login with OAuth if it isn&#x27;t enabled already.</li>
+<li>Enter the following fields:</li>
+</ol>
+<retype-table copy-text="| Field | Value  | 
+| --------- | --------- | 
+| issuer_url  | https://auth.YOUR_DOMAIN.com   |     
+| client_id    | nextcloud   |
+| client_secret | The random password from Step 3             |
+| token_endpoint_auth_method  | client_secret_basic   | 
+| Button text    | Login with Authelia   |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>issuer_url</td>
+<td>https://auth.YOUR_DOMAIN.com</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>nextcloud</td>
+</tr>
+<tr>
+<td>client_secret</td>
+<td>The random password from Step 3</td>
+</tr>
+<tr>
+<td>token_endpoint_auth_method</td>
+<td>client_secret_basic</td>
+</tr>
+<tr>
+<td>Button text</td>
+<td>Login with Authelia</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<ol start="7">
+<li>You can optionally enable Auto register and Auto launch.</li>
+</ol>
+</div>
 
                 
                 <!-- Required only on API pages -->
@@ -141,20 +208,20 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../app-installations/mobile-photo-backup/immich-public-proxy/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../app-installations/mobile-photo-backup/10-post-installation-setup/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Immich Public Proxy (Optional)</span>
+                                <span class="block mt-1">Post Installation Setup</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../app-installations/backup/appdata-backup/installation/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../app-installations/mobile-photo-backup/15-external-path/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">Installation</span>
+                                <span class="block mt-1">External Storage (Optional)</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -198,6 +265,6 @@
 
     <div id="retype-overlay-target"></div>
 
-        <script data-cfasync="false">window.__DOCS__ = { "title": "Authelia setup", level: 3, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/app-installations/mobile-photo-backup/authelia-setup.md" }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Authelia Setup", level: 3, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/app-installations/mobile-photo-backup/authelia-setup.md" }</script>
 </body>
 </html>

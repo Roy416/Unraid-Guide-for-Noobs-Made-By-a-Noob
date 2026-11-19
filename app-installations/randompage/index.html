@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845180079016">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848447485791">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Randompage</title>
     <meta name="title" content="Randompage">
-    <meta name="description" content="make a trouble shoot section and add docker image size and">
+    <meta name="description" content="insert the text in the thing below, so that you can see the text also in dark mode.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://noobs.unraid-guide.workers.dev/app-installations/randompage/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noobs.unraid-guide.workers.dev/app-installations/randompage/">
     <meta property="og:title" content="Randompage">
-    <meta property="og:description" content="make a trouble shoot section and add docker image size and">
+    <meta property="og:description" content="insert the text in the thing below, so that you can see the text also in dark mode.">
     <meta property="og:site_name" content="Unraid Guide for Noobs Made by a Noob">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://noobs.unraid-guide.workers.dev/app-installations/randompage/">
     <meta name="twitter:title" content="Randompage">
-    <meta name="twitter:description" content="make a trouble shoot section and add docker image size and">
+    <meta name="twitter:description" content="insert the text in the thing below, so that you can see the text also in dark mode.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://noobs.unraid-guide.workers.dev/app-installations/randompage.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../favicon2.png" />
-    <link href="../../resources/css/retype.css?v=4.6.0.845180079016" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.848447485791" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845180079016" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.848447485791" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -135,15 +135,28 @@
 
                 <!-- Page content  -->
 <h1 id="randompage">Randompage</h1>
-<p>make a trouble shoot section and add docker image size and</p>
+<p>insert the text in the thing below, so that you can see the text also in dark mode.</p>
+<style>
+.my-text { color: #000; }
+html.dark .my-text { color: #eee; }
+</style>
+<div class="my-text">
+<p>Your text here</p>
+</div>
+<hr>
+<ul>
+<li>change arrows to regular</li>
+<li>change the server desktop picture</li>
+<li>hdd temperature warnings</li>
+<li>check how the powerpoint resizes by default on laptop, and both monitors</li>
+<li>add note for tailscale that it looks different but i dont want to reinstall tailscale for the fourth time on my production server. or redo the insstrctions?</li>
+<li>why is unraid weird/does things differntly? its because it was first made a long time ago. for example the unraid templates were made before docker compose was even a thing. next update it will become more modern</li>
+</ul>
 <h3 id="ipv6-el-diablo">IPv6 El Diablo</h3>
 <p>Story time. I got new internet and nothing was working. My containers with VPNs, custom docker networks disappeared, and security cameras (outside of Unraid) stopped working. As soon as I disabled IPv6 on my modem/router and restarted everything, it all clicked into place.</p>
 <p>^ remove from custom docker network section if you do</p>
 <ul>
-<li>
-<p>unraid os can now be on SSD - mention USB die a lot. can use the ssd with boot + data as of 2026 (?). unraid will recognize the data parition as a different mount.</p>
-</li>
-<li></li>
+<li>unraid os can now be on SSD - mention USB die a lot. can use the ssd with boot + data as of 2026 (?). unraid will recognize the data parition as a different mount.</li>
 </ul>
 <p>ADD SECTION ABOUT NGINX PROXY MANAGER AND WHAT APPS ARE GONNA HAVE IT ON THIS GUIDE? NEXTCLOUD-AIO AND IMMICH? LIKE THAT WE HAVE TO CHANGE BR0</p>
 <h2 id="other-concerns">Other Concerns</h2>
@@ -170,28 +183,9 @@
 <h3 id="bitwarden">bitwarden</h3>
 <p>when putting it on your phone and oding tailscale method, the tailscale number ip wont work. it has to be the</p>
 <p>SMART data what entries matter and the temperature before failure with that on backblaze data?</p>
-<p>disable ssh
-enable mirror syslog to flash
-under plex under portforwarding add a snippet about using tailscale? about how some people say its usable and you can avoid the remote access but im not able to test it.
-maybe mention how the slides are meant to be supplementary to the notes and not something you can follow fully on its own.</p>
-<p>maybe add a section in the troubleshoot thats &quot;got new internet nothing works?&quot; then put the ipv6 warning and the way of booting up your switch, modem, router.</p>
-<p>insert the text in the thing below, so that you can see the text also in dark mode.</p>
-<style>
-.my-text { color: #000; }
-html.dark .my-text { color: #eee; }
-</style>
-<div class="my-text">
-<p>Your text here</p>
-</div>
-<ul>
-<li>change the server desktop picture</li>
-<li>hdd temperature warnings</li>
-<li>remove usb creator</li>
-<li>update first time setup with new unraid 7.0.0 guide</li>
-<li>check how the powerpoint resizes by default on laptop, and both monitors</li>
-<li>add note for tailscale that it looks different but i dont want to reinstall tailscale for the fourth time on my production server.</li>
-<li>why is unraid weird/does things differntly? its because it was first made a long time ago. for example the unraid templates were made before docker compose was even a thing. next update it will become more modern</li>
-</ul>
+<p>enable mirror syslog to flash</p>
+<p>maybe mention how the slides are meant to be supplementary to the notes and not something you can follow fully on its own.</p>
+<p>maybe add a section in the troubleshoot thats &quot;got new internet nothing works?&quot; then put the ipv6 warning and the way of booting up your switch, modem, router. add docker image size and</p>
 
                 
                 <!-- Required only on API pages -->

@@ -5,9 +5,9 @@ If I was to build a server again, I'd only be only slightly less confused on how
 
 ### 💾 USB
 
-The **Unraid OS runs off of a USB** instead of it being installed on one of your drives. The one requirement of the USB is **it needs to have a GUID**. This is how Unraid links your license to the USB.
+Unraid OS used to be ran off of a USB. This wasn't ideal for many reasons. However as of version 7.3.0, the OS can now be installed on an SSD. The USB will be needed for the initial install. 
 
-Some popular USB options mentioned a lot in the Unraid Discord include Transcend Jetflash 780 (high quality stuff), Samsung Bar Plus, and the Cruzer Fit. Unraid recommends using a USB with **32GB or less**.
+The USB still might be needed to hold the license, depending on how old your CPU is. The CPU needs to support TPM 2.0, in order for the license to be transferred off of the USB. 
 
 ### 🚗 Hard Drives
 

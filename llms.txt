@@ -1,6 +1,6 @@
 ﻿# Unraid Guide for Noobs Made by a Noob
 
-> test
+> If this is your first time building a home lab it can be quite overwhelming, especially after the tedious task of picking out the hardware. So in the spirit of Unraid having an active community, I've created this guide!
 
 - [Unraid Guide for Noobs Made by a Noob](https://noobs.unraid-guide.workers.dev/readme.md): Unraid Guide for Noobs Made by a Noob
 
@@ -62,8 +62,8 @@
 
 - [About Authelia](https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/what-authelia.md): Authelia is known as a SSO (Single Sign-On). It isn't necessary to set up right away, but it's the next step in security if you're accessing your apps remotely via port forwarding or cloudflare tunnel.
 - [Installation](https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/authelia-setup.md): Accompanying video by AlienTech42
-- [Forward Authentication](https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/forward-authentication.md): web app only Now lets setup an app to use authelia. If you're using cloudflare tunnels, this requires you to set up Nginx Proxy Manager.
-- [OIDC Setup*](https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/oidc.md): Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app use it, Authelia won't start. This only has to be set up once.
+- [Forward Authentication](https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/forward-authentication.md): Now let's set up an app to use Authelia. If you're using Cloudflare tunnel, this requires you to set up Nginx Proxy Manager. This method is for apps that are only used through the web (not with desktop or mobile apps).
+- [OIDC Setup*](https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/oidc.md): Only set this up, if you are planning to add a client right after. Because if you set this up and don't have an app to use it, Authelia won't start. This only has to be set up once.
 - [Add a New User](https://noobs.unraid-guide.workers.dev/remote-server-access/authelia/new-user.md): Go to Authelia's appdata folder and open users_database.yml.
 
 ## App Installations
@@ -89,16 +89,16 @@
 - [Using Tailscale Instead](https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/using-tailscale-instead.md): Accompanying video by Spaceinavder
 - [Post Installation Setup](https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/post-installation-setup.md): First thing you probably said was "maan, this added like a gazillion containers on the Docker tab making it all ugly." Luckily for you theres a plugin called folderview3.
 - [External Storage](https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/external-storage.md): External Storage allows you to connect a share to Nextcloud. This is useful when you want to share files that is already in one of your shares, rather than having to copy and paste it into Nextcloud, and then sharing.
-- [Authelia Setup](https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/authelia-nextcloud.md): Set up OIDC for Authelia if you havent already.
+- [Authelia Setup](https://noobs.unraid-guide.workers.dev/app-installations/file-sharing/authelia-nextcloud.md): Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.
 
 ### Mobile Photo Backup
 
 - [About Immich](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/0-immich.md): Immich is pretty much the go to service for "backup my photos from my phone to my server". Some features include; having multiple users, creating shareable links, and having shared albums.
 - [Installation](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/5-installation.md): Immich's guide for Unraid
 - [Post Installation Setup](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/10-post-installation-setup.md): If you're using a domain you purchased, enter your server URL with https, even though that's not what you put in NPM. If you're using a Tailscale address (e.g.
-- [External Storage (Optional)](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/15-external-path.md): You can add external libraries to Immich. I use this to add my childhood photos and videos. The one downside is that only one person can view it. So if another person wants to view those photos and videos too, you have to create another external library for the same photos and videos.
+- [Authelia Setup](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/authelia-setup.md): Things might update and change. Refer to Authelia's Unofficial instructions if you're having trouble.
+- [External Storage (Optional)](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/15-external-path.md): You can add external libraries to Immich. I use this to add my childhood photos and videos. The one downside is that only one user can view it. So if another user wants to view those photos and videos, you'd have to create another external library for the same photos and videos just for them.
 - [Immich Public Proxy (Optional)](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/immich-public-proxy.md): Have you ever wished to be able to share photos to your friends and family without needing to expose all of Immich? Look no further, Immich Public Proxy is here!
-- [Authelia setup](https://noobs.unraid-guide.workers.dev/app-installations/mobile-photo-backup/authelia-setup.md)
 
 ### Backup
 
@@ -116,4 +116,4 @@
 ### TRaSH
 
 - [About TRaSH](https://noobs.unraid-guide.workers.dev/app-installations/trash/newmd1-copy.md): You may have heard about TRaSH guides and ARR setups. These allow you to automate downloading movies and shows. I can already hear you saying, "I'm perfectly fine doing it manually, I don't need to set anything else up".
-- [Randompage](https://noobs.unraid-guide.workers.dev/app-installations/randompage.md): make a trouble shoot section and add docker image size and
+- [Randompage](https://noobs.unraid-guide.workers.dev/app-installations/randompage.md): insert the text in the thing below, so that you can see the text also in dark mode.
