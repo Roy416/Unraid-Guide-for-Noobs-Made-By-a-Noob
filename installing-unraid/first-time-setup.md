@@ -9,6 +9,8 @@ icon: ../assets/gear.png
 
 1. Open a web browser and **enter the IPv4 address** you noted earlier. You can also access it by entering `<servername>.local`, however this is less reliable.
 2. **Create a password** for the Root user.
+3. Customize the settings to your liking. If you don't know what SSH is, it's best to keep it disabled for security reasons. 
+4. Next you can 
 3. Next, you'll get a prompt to enter your **activation code** or to start a free trial.
 4. **Assign your drives** to the array. Remember, the parity drive has to be the largest capacity or equal to it.
 5. For cache drives, scroll down and click **Add Pool**, give it a **name**, click **Add**, and **assign** your SSD drive. 
@@ -25,6 +27,6 @@ icon: ../assets/gear.png
 
 7. Click **Start** to turn on the array. It should try to build the parity, however it will probably ask you to format your drives. So click on the "**Yes I want to do this**" checkbox, and click **Format**. After it's formatted, your array should be up and running!
 
-
+click move tpm to board in tools -> registration
 
 </div>

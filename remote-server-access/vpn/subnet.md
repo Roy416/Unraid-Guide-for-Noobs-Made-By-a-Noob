@@ -22,6 +22,8 @@ Creating a Subnet:
 
 <span style="color:white;">●</span>
 
+[!badge text="Note" variant="danger"] add note for tailscale that it looks different but i dont want to reinstall tailscale for the fourth time on my production server.
+
 1. Go to **Settings** → **Tailscale**. Click on "**Viewing**" and **Sign in**. You might have to try it again twice or thrice.
 2. A new but similar page will pop up, click **Subnet Router**.
 3. To find what route to enter, take your Unraid IP Address, remove the number after the last decimal, and append "0/24". For example, if your Unraid IP Address is 192.168.2.202, your subnet would be 192.168.2.0/24. After entering that in, click **Advertise new routes.**

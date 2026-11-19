@@ -1,7 +1,7 @@
 ---
 label: Immich Public Proxy (Optional)
 order: 950
-icon:
+icon: ../../assets/globe.png
 ---
 <div style="color: black;">
 
