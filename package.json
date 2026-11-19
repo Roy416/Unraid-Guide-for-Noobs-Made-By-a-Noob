@@ -1,0 +1,7 @@
+{
+  "name": "unraid-guide",
+  "private": true,
+  "devDependencies": {
+    "retypeapp": "4.6.0"
+  }
+}
